@@ -1,513 +1,370 @@
-body
-{
-	margin: 0;
-	font-family: Montserrat;
+html,
+body {
+  height: 100%;
 }
 
-#header
-{
-	position:fixed;
-	width:100%;
-	top:0;
-	left:0;
-	
-	box-shadow: 0vmin 0vmin 0.8vmin #222222;
-	background-color: #500076;
-	color: white;
-	z-index:5;
-	
-	text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif;
+  font-size: calc(14px + 0.5vmin);
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
 }
 
-.headerLeft
-{
-	width: 15vmin;
-	display:inline-block;
-	font-size: 5vmin;
-	text-align:left;
-	padding-left:2vmin;
+#header {
+  padding: 1em;
+  background-color: #500076;
 }
 
-.headerMiddle
-{
-	width: calc(100% - 34vmin);
-	display:inline-block;
+#header h1 {
+  max-width: 640px;
+  margin: 0 auto;
+  font-weight: 600;
 }
 
-.headerRight
-{
-	width: 15vmin;
-	display:inline-block;
-	font-size: 5vmin;
-	text-align:right;
-	padding-right:2vmin;
+#header a {
+  color: white;
+  text-decoration: none;
 }
 
-#header h1
-{
-	margin:0;
-	padding:0;
-	vertical-align:middle;
-	font-size: 5vmin;
+#content {
+  padding: 2em 1em 1em;
+  flex-grow: 1;
 }
 
-#header a
-{
-	color: white;
-	text-decoration: none;
+#footer {
+  padding: 1em;
+  border-bottom: 1em solid #500076;
+}
+#footer p {
+  max-width: 640px;
+  margin: 0 auto;
 }
 
-#mainFrame
-{
-	background-color: #ebebeb;
-	box-shadow: 0vmin 0vmin 0.4vmin #222222;
-	margin: 5vmin;
-	padding-bottom: 2vmin;
-	border-radius: 1vmin;
+hr {
+  background-color: #ccc;
+  border: none;
+  margin: 2em 0;
+  height: 4px;
 }
 
-#content
-{
-	padding-top: 3em;
+a {
+  color: black;
+  text-decoration: underline;
 }
 
-#footer
-{
-	font-size: 1.8vmin;
-	text-align: center;
-	padding: 2.5vmin;
-	border-top: #C5C5C5 0.2vmin solid;
-	margin-top: 6vmin;
+h2,
+h3,
+h4 {
+  max-width: 640px;
+  margin: 0 auto;
+  font-weight: 600;
 }
 
-hr
-{
-	border-top: #C5C5C5 0.2vmin solid;
-	margin-top: 4vmin;
-	margin-bottom: 5vmin;
+h3 {
+  font-size: calc(16px + 1vmin);
 }
 
-a
-{
-	color:#464646;
-	text-decoration: underline;
+h4 {
+  margin: 0 auto 0.5em;
 }
 
-h2
-{
-	font-size: 3vmin;
-	text-align: center;
-	padding:2vmin;
-	margin:0;
+.simpleText {
+  max-width: 640px;
+  margin: 1em auto 2em;
+}
+.simpleText svg {
+  vertical-align: text-bottom;
+}
+.columnContainer {
+  position: relative;
+}
+.columnLeft {
+  float: left;
+  width: 100%;
+}
+.columnRight {
+  float: left;
+  width: 100%;
+  margin-bottom: 4vmin;
+}
+@media screen and (min-width: 80em) {
+  .columnLeft {
+    width: 50%;
+  }
+  .columnRight {
+    width: 50%;
+  }
 }
 
-.simpleText
-{
-	text-align: justify;
-	text-justify: inter-word;
-	font-size: 2vmin;
-	padding-left:2vmin;
-	padding-right:2vmin;
+#bonusBox {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.questionBox {
+  max-width: 640px;
+  min-height: 5.5em;
+  margin: 1em auto;
+}
+.description {
+  margin: 1.5em auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.descText,
+.descTextMono {
+  flex-grow: 1;
+  max-width: 640px;
+}
+.descText {
+  width: calc(100% - 30vmin);
+}
+.descText p {
+  margin: 0 0 1em;
+}
+.descTextMono {
+  align-self: center;
+}
+.descTextMono p {
+  margin: 0;
+}
+.descImg {
+  line-height: 0;
+}
+.descImg img {
+  width: 15vmin;
+  height: 15vmin;
+}
+.axisConstructivism {
+  background-color: #a425b6;
+  text-align: right;
+}
+.axisEssentialism {
+  background-color: #34b634;
+  text-align: left;
+}
+.axisInternationalism {
+  background-color: #3e6ffd;
+  text-align: right;
+}
+.axisNationalism {
+  background-color: #ff8500;
+  text-align: left;
+}
+.axisCommunism {
+  background-color: #cc0000;
+  text-align: right;
+}
+.axisCapitalism {
+  background-color: #ffb800;
+  text-align: left;
+}
+.axisProgressism {
+  background-color: #850083;
+  text-align: right;
+}
+.axisConservatism {
+  background-color: #970000;
+  text-align: left;
+}
+.axisEcology {
+  background-color: #a0e90d;
+  text-align: right;
+}
+.axisProductivism {
+  background-color: #4deae9;
+  text-align: left;
+}
+.axisLiberal {
+  background-color: #14bee1;
+  text-align: right;
+}
+.axisAuthoritarism {
+  background-color: #e6cc27;
+  text-align: left;
+}
+.axisRegulation {
+  background-color: #269b32;
+  text-align: right;
+}
+.axisLaissez {
+  background-color: #6608c0;
+  text-align: left;
+}
+.axisRevo {
+  background-color: #eb1a66;
+  text-align: right;
+}
+.axisRefo {
+  background-color: #0ee4c8;
+  text-align: left;
 }
 
-.shareText
-{
-	margin-top:5vmin;
-	margin-bottom:5vmin;
-	text-align: center;
-	text-justify: inter-word;
-	font-size: 2vmin;
-	padding-left:2vmin;
-	padding-right:2vmin;
+.navButtons {
+  margin: 0 auto 1em;
+  text-align: center;
+  max-width: 400px;
+}
+button,
+.button {
+  text-align: center;
+  margin: 0.5em 0;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #500076;
+  color: white;
+  cursor: pointer;
+}
+button.strong-agree {
+  background-color: #1b5e20;
+}
+button.agree {
+  background-color: #4caf50;
+}
+button.neutral {
+  background-color: #bbbbbb;
+}
+button.disagree {
+  background-color: #f44336;
+}
+button.strong-disagree {
+  background-color: #b71c1c;
 }
 
-.columnContainer
-{
-	position: relative;
+.questionButtons button {
+  color: white;
+  width: 100%;
+  padding: 0.5em 0;
 }
-.columnLeft
-{
-	float: left;
-	width: 100%;
+.button:hover {
+  background-color: white;
+  color: #500076;
 }
-.columnRight
-{
-	float: left;
-	width: 100%;
-	margin-bottom: 4vmin;
+.button svg {
+  fill: white;
+  vertical-align: text-bottom;
 }
-@media screen and (min-width: 80em )
-{
-	.columnLeft
-	{
-		width: 50%;
-	}
-	.columnRight
-	{
-		width: 50%;
-	}
+.button:hover svg {
+  fill: #500076;
 }
-
-.axisEnd
-{
-	display: inline-block;
-	width:15vmin;
-	height: 15vmin;
-	vertical-align: middle;
-	z-index: 3;
-	position:relative;
+.buttonLinkGood {
+  background-color: #0eb31a;
+  color: white;
 }
-.axisEnd > img
-{
-	width:100%;
-	position: relative;
-	left: 5vmin;
+.buttonLinkGood:hover {
+  background-color: #0eb31a;
+  color: white;
 }
-.axisEndLeft > img
-{
-	left: 2vmin;
+.buttonLinkGood svg,
+.buttonLinkGood:hover svg {
+  fill: white;
 }
-.axisEndRight > img
-{
-	left: -2vmin;
+.urlToCopyContainer {
+  width: 100%;
+  text-align: center;
 }
-.axisProgress
-{
-	display: inline-block;
-	width:calc(100% - 30vmin);
-	height: 15vmin;
-	vertical-align: middle;
-}
-.axisSubProgress
-{
-	display: inline-block;
-	height:5vmin;
-	margin-top:5vmin;
-	color: white;
-	font-size: 3.2vmin;
-	box-shadow: 0vmin 0vmin 0.4vmin #222222;
-	z-index: 2;
-	position:relative;
-}
-.axisSubProgress span
-{
-	display: inline-block;
-	vertical-align: middle;
-	padding-left: 1.1vmin;
-	padding-right: 1.1vmin;
+.urlToCopy {
+  max-width: 400px;
+  background-color: white;
+  display: inline-block;
+  padding: 0.5em;
+  margin: 1em 0 0;
+  z-index: 6;
+  border-radius: 3px;
+  word-break: break-all;
 }
 
-.questionBox
-{
-	display: table;
-	text-align: center;
-    margin-top: 5vmin;
-    margin-bottom: 5vmin;
-    margin-left: auto;
-    margin-right: auto;
-	padding:4vmin;
-	height: 10vmin;
+.flagDecoration {
+  text-align: center;
 }
-.questionBox div
-{
-	display: table-cell;
-	vertical-align: middle;
-	font-size: 2vmin;
+.flagDecoration canvas {
+  box-shadow: 0 1px 1px 1px #aaa;
+  max-width: 70vmin;
 }
-.description
-{
-	margin:2vmin;
-	margin-top:3vmin;
+.generatedResultsDecorations {
+  text-align: center;
 }
-.descText, .descTextMono
-{
-	display: inline-block;
-	
-	text-align: justify;
-	vertical-align: top;
-	text-justify: inter-word;
-	font-size: 2vmin;
+.generatedResultsDecorations canvas {
+  box-shadow: 0 1px 1px 1px #aaa;
+  max-width: 800px;
+  width: 100%;
 }
-.descText
-{
-	width:calc(100% - 30vmin);
-}
-.descTextMono
-{
-	width:calc(100% - 15vmin);
-}
-.descImg
-{
-	display: inline-block;
-}
-.descImg img
-{
-	width:15vmin;
-	height: 15vmin;
+#slogan {
+  margin: 1em 0;
+  font-size: calc(14px + 2vw);
 }
 
-.axisDesc
-{
-
+.scale {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1em;
 }
-.axisDescLeft, .axisDescRight
-{
-	width:50%;
-	display: inline-block;
-	position: relative;
-	top: 4vmin;
-	z-index: 4;
-	font-size:2.5vmin;
+.scale .left,
+.scale .right {
+  width: 15vmin;
+  height: 15vmin;
+  position: relative;
 }
-.axisDescLeft
-{
-	text-align:left;
+.scale .left img,
+.scale .right img {
+  position: absolute;
+  top: 0;
+  width: 15vmin;
+  z-index: 2;
 }
-.axisDescRight
-{
-	text-align:right;
+.scale .left img {
+  left: 2vmin;
 }
-.axisDescLeft p
-{
-	margin:0;
-	margin-left: 16vmin;
+.scale .right img {
+  right: 2vmin;
 }
-.axisDescRight p
-{
-	margin:0;
-	margin-right: 16vmin;
+.scale .axis {
+  flex-grow: 1;
 }
-.axisNeutral
-{
-	background-color: #ebebeb;
-	color: black;
-	text-align: center;
-	z-index: 1;
-	position:relative;
+.scale .axis .label {
+  display: flex;
+  font-size: 2.5vmin;
+  height: 5vmin;
+  align-items: center;
 }
-.axisConstructivism
-{
-	background-color: #a425b6;
-	text-align: right;
+.scale .axis .label .left-label,
+.scale .axis .label .right-label {
+  width: 50%;
+  margin: 0 0.5em;
 }
-.axisEssentialism
-{
-	background-color: #34b634;
-	text-align: left;
+.scale .axis .label .right-label {
+  text-align: right;
 }
-.axisInternationalism
-{
-	background-color: #3e6ffd;
-	text-align: right;
+.scale .axis .axis-bar {
+  display: flex;
+  box-shadow: 0vmin 1px 0.4vmin #aaa;
+  height: 5vmin;
+  background-color: #f3f3f3;
+  color: #888;
 }
-.axisNationalism
-{
-	background-color: #ff8500;
-	text-align: left;
+.scale .axis .axis-bar .axis-left,
+.scale .axis .axis-bar .axis-center,
+.scale .axis .axis-bar .axis-right {
+  font-size: 3.2vmin;
+  line-height: 5vmin;
 }
-.axisCommunism
-{
-	background-color: #cc0000;
-	text-align: right;
+.scale .axis .axis-bar .axis-left span,
+.scale .axis .axis-bar .axis-right span {
+  padding: 0 1.1vmin;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-.axisCapitalism
-{
-	background-color: #ffb800;
-	text-align: left;
+.scale .axis .axis-bar .axis-left {
+  text-align: right;
 }
-.axisProgressism
-{
-	background-color: #850083;
-	text-align: right;
+.scale .axis .axis-bar .axis-center {
+  text-align: center;
+  flex-grow: 1;
 }
-.axisConservatism
-{
-	background-color: #970000;
-	text-align: left;
-}
-.axisEcology
-{
-	background-color: #a0e90d;
-	text-align: right;
-}
-.axisProductivism
-{
-	background-color: #4deae9;
-	text-align: left;
-}
-.axisLiberal
-{
-	background-color: #14bee1;
-	text-align: right;
-}
-.axisAuthoritarism
-{
-	background-color: #e6cc27;
-	text-align: left;
-}
-.axisRegulation
-{
-	background-color: #269B32;
-	text-align: right;
-}
-.axisLaissez
-{
-	background-color: #6608C0;
-	text-align: left;
-}
-.axisRevo
-{
-	background-color: #eb1a66;
-	text-align: right;
-}
-.axisRefo
-{
-	background-color: #0ee4c8;
-	text-align: left;
-}
-
-.bonusList
-{
-	text-align:center;
-}
-.bonus
-{
-	width:15vmin;
-	height: 15vmin;
-}
-
-.navButtons
-{
-	margin-top:5vmin;
-	margin-bottom:5vmin;
-	margin-left:auto;
-	margin-right:auto;
-	width:40vmin;
-}
-
-.buttonQuestion, .button
-{
-	text-align: center;
-	width:100%;
-	margin-top: 0;
-	margin-bottom: 1vmin;
-	padding-top:1vmin;
-	padding-bottom:1vmin;
-	display: inline-block;
-	border: none;
-	border-radius: 0.5vmin;
-	font-size: 2.5vmin;
-	text-decoration: none;
-	
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	transition: .5s;
-}
-.button:hover
-{
-	background-color: white;
-	color: #500076;
-}
-
-.button
-{
-	background-color: #500076;
-	color: white;
-}
-
-.buttonQuestion
-{
-	color: white;
-}
-
-.buttonTwitter
-{
-	background-color: #00aced;
-	color: white;
-	width: calc(25% - 0.5vmin);
-	margin-right: 0.5vmin;
-}
-.buttonTwitter:hover
-{
-	color: #00aced;
-}
-.buttonFacebook
-{
-	background-color: #3B5998;
-	color: white;
-	width: calc(25% - 1vmin);
-	margin-left: 0.5vmin;
-	margin-right: 0.5vmin;
-}
-.buttonFacebook:hover
-{
-	color: #3B5998;
-}
-.buttonReddit
-{
-	background-color: #ff5700;
-	color: white;
-	width: calc(25% - 1vmin);
-	margin-left: 0.5vmin;
-	margin-right: 0.5vmin;
-}
-.buttonReddit:hover
-{
-	color: #ff5700;
-}
-.buttonLink
-{
-	background-color: #500076;
-	color: white;
-	width: calc(25% - 0.5vmin);
-	margin-left: 0.5vmin;
-}
-.buttonLink:hover
-{
-	color: #500076;
-}
-.buttonLinkGood
-{
-	background-color: #0EB31A;
-	color: white;
-	width: calc(25% - 0.5vmin);
-	margin-left: 0.5vmin;
-}
-.buttonLinkGood:hover
-{
-	background-color: #0EB31A;
-	color: white;
-}
-
-.flagDecoration
-{
-	text-align:center;
-}
-.flagDecoration canvas
-{
-	border: solid 1px grey;
-	max-width: 70vmin;
-}
-#slogan
-{
-	padding-top: 3vmin;
-	font-size: 4.3vmin;
-}
-.urlToCopyContainer
-{
-	width:100%;
-	text-align:center;
-	font-size: 2vmin;
-}
-.urlToCopy
-{
-	width:50vmin;
-	background-color: white;
-	display:inline-block;
-	padding:1vmin;
-	z-index:6;
-	border-radius:1vmin;
-}
-© 2020 GitHub, Inc.
