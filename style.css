@@ -138,67 +138,59 @@ h4 {
   width: 15vmin;
   height: 15vmin;
 }
-.axisConstructivism {
+.axisДемократизм {
   background-color: #a425b6;
   text-align: right;
 }
-.axisEssentialism {
+.axisАвторитаризм {
   background-color: #34b634;
   text-align: left;
 }
-.axisInternationalism {
+.axisРеабилитизм {
   background-color: #3e6ffd;
   text-align: right;
 }
-.axisNationalism {
+.axisРепрессивизм {
   background-color: #ff8500;
   text-align: left;
 }
-.axisCommunism {
+.axisКонсерватизм {
   background-color: #cc0000;
   text-align: right;
 }
-.axisCapitalism {
+.axisПрогрессивизм {
   background-color: #ffb800;
   text-align: left;
 }
-.axisProgressism {
+.axisКоллективизм {
   background-color: #850083;
   text-align: right;
 }
-.axisConservatism {
+.axisИндивидуализм {
   background-color: #970000;
   text-align: left;
 }
-.axisEcology {
-  background-color: #a0e90d;
-  text-align: right;
-}
-.axisProductivism {
-  background-color: #4deae9;
-  text-align: left;
-}
-.axisLiberal {
+.axisСвобода {
   background-color: #14bee1;
   text-align: right;
 }
-.axisAuthoritarism {
+.axisЦензура {
   background-color: #e6cc27;
   text-align: left;
 }
-.axisRegulation {
+.axisИзоляционизм {
   background-color: #269b32;
   text-align: right;
 }
-.axisLaissez {
+.axisГлобализм {
   background-color: #6608c0;
   text-align: left;
 }
-.axisRevo {
+.axisАвтономизм {
   background-color: #eb1a66;
   text-align: right;
 }
-.axisRefo {
+.axisУнионизм {
   background-color: #0ee4c8;
   text-align: left;
 }
