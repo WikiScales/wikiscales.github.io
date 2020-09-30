@@ -610,11 +610,10 @@ function onImageLoaded() {
 
     var yPos = 20;
 
-     if (flag) {
+    if (flag) {
       var flagCtx = flag.getContext("2d");
       var flagSize = 160;
 
-    
       //Logo
       ctx.beginPath();
       ctx.rect(0, 0, rPreview.width, 42);
