@@ -19,8 +19,7 @@ var questions = [
     ]
   },
   {
-    question:
-      "Тестовый вопрос про авторитаризм.",
+    question: "Тестовый вопрос про авторитаризм.",
     answer: 0,
     valuesYes: [
       {
@@ -36,12 +35,11 @@ var questions = [
     ]
   },
   {
-    question:
-      "Тестовый вопрос про удализм.",
+    question: "Тестовый вопрос про удализм.",
     answer: 0,
     valuesYes: [
       {
-        axis: "удали",
+        axis: "delete",
         value: 3
       }
     ],
