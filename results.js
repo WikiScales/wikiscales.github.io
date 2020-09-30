@@ -843,7 +843,7 @@ function download_image() {
   var canvas = document.getElementById("generatedResults");
   var link = document.createElement("a");
   link.href = canvas.toDataURL();
-  link.download = `PolitiScales_Results_${+new Date()}.png`;
+  link.download = `WikiScales_Results_${+new Date()}.png`;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
