@@ -34,6 +34,18 @@ var questions = [
         value: 3
       }
     ]
+  },
+  {
+    question:
+      "Тестовый вопрос про удализм.",
+    answer: 0,
+    valuesYes: [
+      {
+        axis: "удали",
+        value: 3
+      }
+    ],
+    valuesNo: []
   }
 ];
 
