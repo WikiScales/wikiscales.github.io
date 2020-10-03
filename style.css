@@ -139,35 +139,35 @@ h4 {
   height: 15vmin;
 }
 .axisДемократизм {
-  background-color: #a425b6;
-  text-align: right;
-}
-.axisАвторитаризм {
-  background-color: #34b634;
-  text-align: left;
-}
-.axisРеабилитизм {
-  background-color: #3e6ffd;
-  text-align: right;
-}
-.axisРепрессивизм {
-  background-color: #ff8500;
-  text-align: left;
-}
-.axisКонсерватизм {
   background-color: #cc0000;
   text-align: right;
 }
+.axisАвторитаризм {
+  background-color: #22bd96;
+  text-align: left;
+}
+.axisРеабилитизм {
+  background-color: #34b634;
+  text-align: right;
+}
+.axisРепрессивизм {
+  background-color: #806441;
+  text-align: left;
+}
+.axisКонсерватизм {
+  background-color: #7a88bf;
+  text-align: right;
+}
 .axisПрогрессивизм {
-  background-color: #ffb800;
+  background-color: #895FCD;
   text-align: left;
 }
 .axisКоллективизм {
-  background-color: #850083;
+  background-color: #DC2E51;
   text-align: right;
 }
 .axisИндивидуализм {
-  background-color: #970000;
+  background-color: #b9bd2b;
   text-align: left;
 }
 .axisСвобода {
@@ -175,23 +175,23 @@ h4 {
   text-align: right;
 }
 .axisЦензура {
-  background-color: #e6cc27;
+  background-color: #D23A22;
   text-align: left;
 }
 .axisИзоляционизм {
-  background-color: #269b32;
+  background-color: #B38236;
   text-align: right;
 }
 .axisГлобализм {
-  background-color: #6608c0;
+  background-color: 2aaea3;
   text-align: left;
 }
 .axisАвтономизм {
-  background-color: #eb1a66;
+  background-color: #8E434A;
   text-align: right;
 }
 .axisУнионизм {
-  background-color: #0ee4c8;
+  background-color: #7BA24F;
   text-align: left;
 }
 
