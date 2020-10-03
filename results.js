@@ -161,118 +161,6 @@ var charSlogan = {
   t1: "Викисоюз"
 };
 
-function findFlagColors() {
-  var colors = [];
-
-  for (var i = 0; i < flagColors.length; i++) {
-    var accepted = 1;
-
-    var mainValue = 0;
-    var mainValueFound = 0;
-
-    for (var j = 0; j < flagColors[i].cond.length; j++) {
-      var charFound = 0;
-      for (var k = 0; k < characteristics.length; k++) {
-        if (characteristics[k].name == flagColors[i].cond[j].name) {
-          charFound = 1;
-          if (
-            characteristics[k].value < flagColors[i].cond[j].vmin ||
-            characteristics[k].value > flagColors[i].cond[j].vmax
-          )
-            accepted = 0;
-          else if (!mainValueFound) {
-            mainValueFound = 1;
-            mainValue = characteristics[k].value;
-          }
-
-          break;
-        }
-      }
-
-      if (!charFound) accepted = 0;
-
-      if (!accepted) break;
-    }
-
-    if (accepted) {
-      colors.push({
-        bgColor: flagColors[i].bgColor,
-        fgColor: flagColors[i].fgColor,
-        value: mainValue
-      });
-    }
-  }
-
-  colors.sort(function(a, b) {
-    return b.value - a.value;
-  });
-
-  return colors;
-}
-
-function findFlagShape(numColors) {
-  var flagFound = -1;
-  var flagValue = [0, 0, 0];
-  var flagColor = 0;
-
-  for (var i = 0; i < flagShapes.length; i++) {
-    if (flagShapes[i].numColors > numColors) continue;
-
-    var condValue = [0, 0];
-    var accepted = 1;
-    if (flagShapes[i].cond.length > 0) {
-      for (var j = 0; j < flagShapes[i].cond.length; j++) {
-        var value = axesValues[flagShapes[i].cond[j].name];
-        if (
-          value < flagShapes[i].cond[j].vmin ||
-          value > flagShapes[i].cond[j].vmax
-        ) {
-          accepted = 0;
-        }
-        if (j < 3) condValue[j] = Math.abs(value);
-
-        if (!accepted) break;
-      }
-    } else {
-      var condValue = [0, 0];
-    }
-
-    if (accepted && flagColor <= flagShapes[i].numColors) {
-      if (flagShapes[i].numColors > flagColor) {
-        flagColor = flagShapes[i].numColors;
-        flagValue[0] = condValue[0];
-        flagValue[1] = condValue[1];
-        flagValue[2] = condValue[2];
-        flagFound = i;
-      } else if (condValue[0] > flagValue[0]) {
-        flagColor = flagShapes[i].numColors;
-        flagValue[0] = condValue[0];
-        flagValue[1] = condValue[1];
-        flagValue[2] = condValue[2];
-        flagFound = i;
-      } else if (condValue[0] == flagValue[0]) {
-        if (condValue[1] > flagValue[1]) {
-          flagColor = flagShapes[i].numColors;
-          flagValue[0] = condValue[0];
-          flagValue[1] = condValue[1];
-          flagValue[2] = condValue[2];
-          flagFound = i;
-        } else if (condValue[1] == flagValue[1]) {
-          if (condValue[2] > flagValue[2]) {
-            flagColor = flagShapes[i].numColors;
-            flagValue[0] = condValue[0];
-            flagValue[1] = condValue[1];
-            flagValue[2] = condValue[2];
-            flagFound = i;
-          }
-        }
-      }
-    }
-  }
-
-  return flagFound;
-}
-
 function getCharacteristic(name, vmin, vmax) {
   for (var k = 0; k < characteristics.length; k++) {
     if (characteristics[k].name != name) continue;
@@ -353,8 +241,6 @@ var images = {
   revo: "/images/Революция.png",
   expan: "/images/Экспансионизм.png",
 };
-
-var numImageLoaded = 0;
 
 function onImageLoaded() {
   numImageLoaded++;
