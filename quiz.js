@@ -11,12 +11,7 @@ var questions = [
         value: 3
       }
     ],
-    valuesNo: [
-      {
-        axis: "c1",
-        value: 3
-      }
-    ]
+    valuesNo: []
   },
   {
     question: "Тестовый вопрос про авторитаризм.",
