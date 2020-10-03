@@ -81,20 +81,20 @@ function setBonus(name, value, limit) {
 var axes = ["c", "b", "p", "m", "s", "j", "t"];
 
 var bonus = {
-  инклюз: 0.5,
+  inc: 0.5,
   delete: 0.5,
-  когда: 0.5,
-  немедли: 0.5,
-  об: 0.5,
-  раз: 0.5,
-  мета: 0.5,
-  экзо: 0.5,
-  моно: 0.5,
-  поли: 0.5,
-  реф: 0.5,
-  реакц: 0.5,
-  рево: 0.5,
-  экспан: 0.5
+  even: 0.5,
+  imm: 0.5,
+  merge: 0.5,
+  separa: 0.5,
+  meta: 0.5,
+  exo: 0.5,
+  mono: 0.5,
+  poly: 0.5,
+  ref: 0.5,
+  react: 0.5,
+  revo: 0.5,
+  expan: 0.5
 };
 
 var characteristics = [];
