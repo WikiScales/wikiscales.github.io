@@ -240,7 +240,7 @@ var images = {
   expan: "/images/Экспансионизм.png",
 };
 
-var numImageLoaded = 1;
+var numImageLoaded = 0;
 
 function onImageLoaded() {
   numImageLoaded++;
@@ -281,19 +281,6 @@ function onImageLoaded() {
       ctx.fillText("wikiscales.github.io", rPreview.width - 10, 27);
 
       yPos += 48;
-      
-      //Flag
-      ctx.drawImage(
-        flag,
-        0,
-        0,
-        flag.width,
-        flag.height,
-        rPreview.width / 2.0 - flagSize,
-        yPos,
-        flagSize * 2,
-        flagSize
-      );
       yPos += flagSize + 10;
        
       //Slogan
@@ -302,16 +289,6 @@ function onImageLoaded() {
       ctx.textAlign = "center";
       ctx.fillText(generatedSlogan, rPreview.width / 2.0, yPos + 30);
       yPos += 70;
-
-      // Totals
-      ctx.fillStyle = "#777";
-      ctx.font = "16px sans-serif";
-      ctx.textAlign = "right";
-      ctx.fillText(
-        `${Math.round(left * 100)}–${Math.round(right * 100)}`,
-        rPreview.width - 7,
-        rPreview.height - 10
-      );
 
       //Axes
       var axesDrawInfo = [
