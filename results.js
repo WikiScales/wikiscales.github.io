@@ -447,7 +447,7 @@ function onImageLoaded() {
             rPreview.width / 2 - ((numBonus - 1) * 100) / 2 + xShift - 20,
             yPos - 10
           );
-          xShift += 100;
+          xShift += 70;
         }
       }
     }
