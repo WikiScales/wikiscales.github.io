@@ -277,7 +277,6 @@ function onImageLoaded() {
       ctx.fillText("wikiscales.github.io", rPreview.width - 10, 27);
 
       yPos += 48;
-      yPos += flagSize + 10;
        
       //Slogan
       ctx.fillStyle = "#000000";
