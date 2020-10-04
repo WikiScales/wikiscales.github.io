@@ -259,10 +259,6 @@ function onImageLoaded() {
     ctx.fill();
 
     var yPos = 20;
-
-    if (flag) {
-      var flagCtx = flag.getContext("2d");
-      var flagSize = 160;
     
       //Logo
       ctx.beginPath();
@@ -457,7 +453,6 @@ function onImageLoaded() {
       }
     }
   }
-}
 
 for (var b in images) {
   var src = images[b];
