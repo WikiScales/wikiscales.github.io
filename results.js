@@ -289,50 +289,50 @@ function onImageLoaded() {
       var axesDrawInfo = [
         {
           key: "c",
-          color0: "#a425b6",
-          color1: "#34b634",
+          color0: "#cc0000",
+          color1: "#1fad8a",
           name0: "Демократизм",
           name1: "Авторитаризм"
         },
         {
           key: "j",
-          color0: "#14bee1",
-          color1: "#e6cc27",
+          color0: "#25afd9",
+          color1: "#D23A22",
           name0: "Свобода слова",
           name1: "Цензура"
         },
         {
           key: "s",
-          color0: "#850083",
-          color1: "#970000",
+          color0: "#DC2E51",
+          color1: "#ccc914",
           name0: "Коллективизм",
           name1: "Индивидуализм"
         },
         {
           key: "b",
-          color0: "#3e6ffd",
-          color1: "#ff8500",
+          color0: "#34b634",
+          color1: "#916021",
           name0: "Реабилитизм",
           name1: "Репрессивизм"
         },
         {
           key: "p",
-          color0: "#cc0000",
-          color1: "#ffb800",
+          color0: "#7889cf",
+          color1: "#7831eb",
           name0: "Консерватизм",
           name1: "Прогрессивизм"
         },
         {
           key: "m",
-          color0: "#269B32",
-          color1: "#6608C0",
+          color0: "#d69022",
+          color1: "#3cbaad",
           name0: "Изоляционизм",
           name1: "Глобализм"
         },
         {
           key: "t",
-          color0: "#eb1a66",
-          color1: "#0ee4c8",
+          color0: "#912a34",
+          color1: "#65962f",
           name0: "Автономизм",
           name1: "Унионизм"
         }
