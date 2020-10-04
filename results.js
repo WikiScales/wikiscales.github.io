@@ -258,6 +258,10 @@ function onImageLoaded() {
 
     var yPos = 20;
 
+    if (flag) {
+      var flagCtx = flag.getContext("2d");
+      var flagSize = 160;
+    
       //Logo
       ctx.beginPath();
       ctx.rect(0, 0, rPreview.width, 42);
@@ -275,6 +279,20 @@ function onImageLoaded() {
       ctx.fillText("wikiscales.github.io", rPreview.width - 10, 27);
 
       yPos += 48;
+      
+      //Flag
+      ctx.drawImage(
+        flag,
+        0,
+        0,
+        flag.width,
+        flag.height,
+        rPreview.width / 2.0 - flagSize,
+        yPos,
+        flagSize * 2,
+        flagSize
+      );
+      yPos += flagSize + 10;
        
       //Slogan
       ctx.fillStyle = "#000000";
