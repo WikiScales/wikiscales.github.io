@@ -240,6 +240,8 @@ var images = {
   expan: "/images/Экспансионизм.png",
 };
 
+var numImageLoaded = 0;
+
 function onImageLoaded() {
   numImageLoaded++;
 
