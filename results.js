@@ -444,10 +444,10 @@ function onImageLoaded() {
         if (value > bonus[b]) {
           ctx.drawImage(
             images[b],
-            rPreview.width / 2 - ((numBonus - 1) * 100) / 2 + xShift - 20,
-            yPos - 10
+            rPreview.width / 2 - ((numBonus - 1) * 100) / 2 + xShift - 43,
+            yPos - 27
           );
-          xShift += 70;
+          xShift += 100;
         }
       }
     }
