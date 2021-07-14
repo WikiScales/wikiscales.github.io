@@ -319,7 +319,7 @@ function onImageLoaded() {
           key: "p",
           color0: "#7889cf",
           color1: "#7831eb",
-          name0: "Консерватизм",
+          name0: "Вики-скептицизм",
           name1: "Прогрессивизм"
         },
         {
