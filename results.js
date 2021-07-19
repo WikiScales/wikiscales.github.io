@@ -313,7 +313,7 @@ function onImageLoaded() {
           color0: "#34b634",
           color1: "#916021",
           name0: "Реабилитизм",
-          name1: "Репрессивизм"
+          name1: "Порядок и дисциплина"
         },
         {
           key: "p",
