@@ -306,7 +306,7 @@ function onImageLoaded() {
           color0: "#DC2E51",
           color1: "#ccc914",
           name0: "Коллективизм",
-          name1: "Индивидуализм"
+          name1: "Работа в одиночку"
         },
         {
           key: "b",
